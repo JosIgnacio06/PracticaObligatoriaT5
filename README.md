@@ -1,142 +1,157 @@
-FernanPop v3 – Manual de Usuario
-<img width="1024" height="1536" alt="Fernanpop" src="https://github.com/user-attachments/assets/c7cdd749-63de-4d48-845f-eed7fc1439d7" />
+# FernanPop v3 – Manual de Usuario
 
+<img width="1024" height="1536" alt="Fernanpop" src="https://github.com/user-attachments/assets/c7cdd749-63de-4d48-845f-eed7fc1439d7" />
 
 FernanPop es un programa de software de compra y venta pensado para que los usuarios puedan intercambiar productos de forma rápida, sencilla y segura. Esta versión incluye notificaciones automáticas por correo electrónico y Telegram para los administradores del sistema.
 
-ÍNDICE
-Descripción
-Requisitos
-Instalación y ejecución del software
-Funcionamiento del software
-Creadores
-
+## ÍNDICE
 1. Descripción
+2. Requisitos
+3. Instalación y ejecución del software
+4. Funcionamiento del software
+5. Creadores
+
+---
+
+# 1. Descripción
 FernanPop permite a los usuarios registrarse, iniciar sesión, gestionar productos en venta, comprar productos de otros usuarios y mantener un historial de ventas y compras. Además, el sistema envía correos electrónicos de verificación y notificaciones al administrador vía Telegram para mantener un control seguro y actualizado de la actividad de los usuarios.
 
-2. Requisitos
+---
+
+# 2. Requisitos
 Para ejecutar FernanPop se necesitan los siguientes requisitos mínimos:
-Tener instalado Java Development Kit (JDK) actualizado.
-El JDK incluye el intérprete Java, clases Java y herramientas de desarrollo que permiten ejecutar aplicaciones Java en cualquier sistema.
-Página oficial de descarga: JDK Oracle
+
+* **Java Development Kit (JDK) actualizado:** El JDK incluye el intérprete Java, clases Java y herramientas de desarrollo.
+* **Página oficial de descarga:** [JDK Oracle](https://www.oracle.com/java/technologies/downloads/)
+
 <img width="1814" height="512" alt="386256659-74b6704e-60e6-4178-ae80-d17462e029b3" src="https://github.com/user-attachments/assets/14c0c81f-da7e-4c6a-ba05-b8a2eff01573" />
 
 Descargar e instalar el paquete correspondiente a tu sistema operativo y seguir las instrucciones del instalador.
+
 <img width="569" height="23" alt="idk-25_linux-aarch64_bin tar gz" src="https://github.com/user-attachments/assets/53dde56b-e9a6-460b-b358-12ecaeec367a" />
 
+---
 
-3. Instalación y ejecución del software
-Descarga la carpeta comprimida .zip del proyecto.
-Descomprime la carpeta.
-Ejecuta el archivo .bat incluido para iniciar el programa.
+# 3. Instalación y ejecución del software
+1. Descarga la carpeta comprimida **.zip** del proyecto.
+2. Descomprime la carpeta.
+3. Ejecuta el archivo **.bat** (Windows) o el ejecutable correspondiente para iniciar el programa.
 
+⚠️ **Advertencia:** Al abrir el .bat, Windows Defender puede bloquear la ejecución. Selecciona “Más información” → “Ejecutar de todas formas”.
 
-⚠️ Advertencia: Al abrir el .bat, Windows Defender puede bloquear la ejecución. Selecciona “Más información” → “Ejecutar de todas formas” para permitir que el software se ejecute correctamente.
-
- 
-<img width="658" height="610" alt="Windows protegió su PC" src="https://github.com/user-attachments/assets/022b87ee-f0ed-46ae-8cfa-0c2650832e2d" />
-<img width="657" height="604" alt="Windows protegió su PC" src="https://github.com/user-attachments/assets/196fa33d-6a44-474b-b7cb-2af1e281403f" />
-
+<img width="658" height="610" alt="Windows protegió su PC" src="https://github.com/user-attachments/assets/022b87ee-f0ed-46ae-8cfa-0c2650832e2d" />
+<img width="657" height="604" alt="Windows protegió su PC" src="https://github.com/user-attachments/assets/196fa33d-6a44-474b-b7cb-2af1e281403f" />
 
 El programa se abrirá en la consola CMD y mostrará la pantalla de inicio de sesión.
 
-4. Funcionamiento del software
-Inicio de sesión y registro
-Al iniciar, se solicita email y contraseña.
+---
 
-<img width="392" height="233" alt="Bienvenido al programa FernanPop" src="https://github.com/user-attachments/assets/d02a2a90-3125-4e97-9a2f-c5e5b9fb5761" />
+# 4. Funcionamiento del software
+El sistema se divide en dos entornos diferenciados: el acceso público para consultas rápidas y el panel de gestión privada para usuarios registrados.
 
- 
+## ■ Menú Principal (Modo Invitado)
 
-Si el usuario ya existe y ha validado su email, se accede al menú principal.
-Si el usuario no ha validado su email, se enviará automáticamente un token de verificación por email, que debe introducir antes de continuar.
-Se permiten 3 intentos de login antes de volver al menú principal.
-El menú principal permite volver al login sin cerrar la aplicación.
+Al iniciar la aplicación, el usuario accede a un menú de navegación global sin necesidad de estar autenticado:
 
-Menú principal
-Una vez iniciado sesión, se presentan las siguientes opciones:
-<img width="498" height="340" alt="Ment de usuanio" src="https://github.com/user-attachments/assets/0074012b-ad19-4007-adc5-4d4ca5acf18c" />
+<img width="366" height="194" alt="image" src="https://github.com/user-attachments/assets/8b5924e2-cc28-4950-a13b-cd3c4b70e729" />
 
-Opción 1: Mostrar datos de usuario
-Muestra el email, el nombre y si el correo ha sido validado.
+**1. Buscar Productos:** Permite consultar todo el catálogo de artículos disponibles en la plataforma, o también por el ID o el nombre del artículo.
 
+<img width="366" height="194" alt="image" src="https://github.com/user-attachments/assets/e0753efc-6c1a-4be1-b16b-82292dd29cf2" />
 
-Opción 2: Modificar datos personales
-Permite actualizar nombre, email y contraseña.
-Si se cambia el email, se enviará un nuevo token para validación.
-El usuario deberá validar nuevamente el correo para poder iniciar sesión con el nuevo email.
+**2. Iniciar sesión:** Acceso mediante credenciales (Email y Contraseña) para usuarios ya registrados.
 
- <img width="390" height="114" alt="Escribe tu nuevo nombre Nachito" src="https://github.com/user-attachments/assets/cd30ad65-978e-4f21-88d3-188fb586c998" />
+<img width="465" height="194" alt="image" src="https://github.com/user-attachments/assets/b1480a28-3c2f-41be-9c11-5751537ff435" />
 
-<img width="256" height="86" alt="Email= holaquetal@gmail com" src="https://github.com/user-attachments/assets/6e6e1be0-ffff-4ae4-9704-064cd8d8365a" />
+**3. Registrarse:** Formulario de creación de cuenta para nuevos miembros.
 
+<img width="465" height="340" alt="image" src="https://github.com/user-attachments/assets/2263c88a-1e43-4a65-8131-e5a299b4429a" />
 
-Opción 3: Ver productos a la venta
-Muestra los productos actuales que el usuario tiene a la venta.
-Si no hay productos, se indica que la lista está vacía.
+**4. Salir:** Finaliza la ejecución del programa.
 
- <img width="315" height="32" alt="No tienes ningún producto en venta" src="https://github.com/user-attachments/assets/f8f191ba-ec7d-4915-bfe4-01a90ee64d99" />
+---
 
-<img width="165" height="83" alt="Producto 1" src="https://github.com/user-attachments/assets/f9bd1e55-6757-4d39-90b7-2c83ba65ac07" />
+## ■ Menú de Usuario (Sesión Iniciada)
 
+Una vez logueado, el sistema muestra un indicador de notificaciones con los tratos pendientes de valorar.
 
-Opción 4: Añadir un producto a la venta
-Permite introducir un nombre y un precio para un nuevo producto.
-Una vez añadido, se enviará automáticamente un correo al usuario con los datos del producto.
-Además, se enviará una notificación al administrador vía Telegram con los detalles del producto.
+<img width="333" height="294" alt="image" src="https://github.com/user-attachments/assets/2273ae67-eb71-4c5b-9832-859fff4cadb7" />
 
+### Opción 1: Mostrar mi perfil de usuario
+Visualiza de forma clara los datos vinculados a la cuenta activa (Nombre y Email).
 
-<img width="429" height="125" alt="Nombre del producto ar1" src="https://github.com/user-attachments/assets/2beb1ddf-408c-4b37-adc6-7e25d4ec75bb" />
+### Opción 2: Cambiar mis datos personales
+Módulo de edición para actualizar el nombre de perfil, el correo electrónico o la contraseña.
 
+### Opción 3: Ver mis productos en venta
+Muestra los artículos que has subido. Permite borrar un producto o venderlo (solicitando el email del comprador y enviando correos de verificación).
 
-<img width="221" height="168" alt="Hola nacho," src="https://github.com/user-attachments/assets/6a7e66ce-a747-48a3-b2a2-2ae5f44a597f" />
+**1.- Mostrar los productos:**
 
-<img width="221" height="108" alt="Nuevo producto añadido por nacho" src="https://github.com/user-attachments/assets/1ae8eec9-fc03-4b5f-b424-63754a519014" />
+<img width="434" height="224" alt="image" src="https://github.com/user-attachments/assets/4c176d35-a97f-4e22-8dfc-37ec7e41010b" />
 
+**2.- Borrar un producto:**
 
+<img width="434" height="224" alt="image" src="https://github.com/user-attachments/assets/8fb1ba16-fc23-4e9c-878e-6cb70d23816f" />
 
-Opción 5: Ver todas las ventas de todos los usuarios
-Muestra los productos que cada usuario tiene a la venta.
-Si un usuario no tiene productos, se indica que su lista de ventas está vacía.
+**3.- Vender un producto:**
 
+<img width="434" height="239" alt="image" src="https://github.com/user-attachments/assets/e28b185f-45f6-4fd8-873b-0c0b42513fd3" />
 
-<img width="563" height="138" alt="Usuario carlosbarroso@fernandosmartos con no tiene productos en venta" src="https://github.com/user-attachments/assets/0a7471fe-2842-473e-999c-c903f39f21fc" />
+### Opción 4: Introducir un producto para vender
+Asistente para añadir artículos indicando Título, Descripción, Precio y Estado.
 
-Opción 6: Histórico de ventas
-Muestra los productos vendidos por el usuario.
-Si no se ha vendido ningún producto, se indica que no hay ventas registradas.
+<img width="333" height="190" alt="image" src="https://github.com/user-attachments/assets/3d052476-a930-4e11-a0df-c378b89bf912" />
 
- <img width="268" height="32" alt="No has vendido ningún producto" src="https://github.com/user-attachments/assets/15a79007-1e9c-421c-903c-57e3a7b1aa09" />
+### Opción 5: Buscar Productos (Submenú de búsqueda)
+Despliega un motor de búsqueda con tres filtros:
 
-<img width="218" height="54" alt="Producto 1 Boli" src="https://github.com/user-attachments/assets/b88a009b-d5a0-439f-9a83-f93d2f63ae22" />
+**Mostrar todos:** Listado general de productos.
 
-Opción 7: Histórico de compras
-Muestra los productos comprados por el usuario.
-Si no se ha comprado ningún producto, se indica que no hay compras registradas.
+<img width="434" height="350" alt="image" src="https://github.com/user-attachments/assets/6b57414e-5a3e-4087-ab2f-7f74e1118395" />
 
- <img width="218" height="31" alt="Ningún producto comprado" src="https://github.com/user-attachments/assets/29c34f89-21eb-4472-b7a9-a6f52d03a711" />
-<img width="218" height="54" alt="Producto 1 Boli" src="https://github.com/user-attachments/assets/6d2f8e39-9528-4856-930e-0f6eb570c9a1" />
+**Buscar por ID:** Localización por código numérico.
 
+<img width="434" height="199" alt="image" src="https://github.com/user-attachments/assets/dbc30ee7-3f14-4b79-bb1d-e7892183aae3" />
 
-Opción 8: Borrar o comprar productos
-Borrar un producto: Permite eliminar un producto de la lista de ventas.
-Comprar un producto: Selecciona un producto para comprarlo.
-Al comprar un producto, se enviará un correo al vendedor notificando la venta.
-Además, el administrador recibe una notificación por Telegram del producto comprado.
+**Buscar por texto:** Filtrado por palabras clave en el título.
 
- <img width="390" height="136" alt="Producto 1" src="https://github.com/user-attachments/assets/496bb7e7-9ddc-46c1-873e-9ff6d0b734cf" />
+<img width="434" height="189" alt="image" src="https://github.com/user-attachments/assets/68e4d895-9c29-428b-a068-bef994c7c02f" />
 
+### Opción 6: Ver valoraciones pendientes
+Lista compras no puntuadas. Permite asignar nota (1-5) y comentario, actualizando la reputación del vendedor.
 
-<img width="390" height="112" alt="Producto 1 Boli" src="https://github.com/user-attachments/assets/4c579fe8-2866-406e-8d4b-0dbb5d02109b" />
+**1.- Ver todas las valoraciones pendientes:**
 
-Opción 9: Cerrar sesión
-Cierra la sesión del usuario y vuelve al menú de inicio de sesión sin cerrar la aplicación.
+<img width="434" height="416" alt="image" src="https://github.com/user-attachments/assets/1c92baf6-0199-4459-bdcf-edffbb97f38d" />
 
- <img width="249" height="72" alt="Cerrando sesión" src="https://github.com/user-attachments/assets/71b5364f-1d6b-4755-a2ec-6b37d4be9562" />
+**2.- Valorar una venta por su ID:**
 
- <img width="392" height="233" alt="Bienvenido al programa FernanPop" src="https://github.com/user-attachments/assets/8ad043a9-120b-4937-a9c9-2557e12c944a" />
+<img width="434" height="254" alt="image" src="https://github.com/user-attachments/assets/782ca5b8-f59a-4843-9151-7fcd332250e1" />
 
+### Opción 7: Ver mi historial de tratos
+Registro histórico dividido en:
 
+**Compras:** Artículos adquiridos y sus valoraciones enviadas.
 
-5. Creadores
-Este programa ha sido creado por Jose Ignacio y David.
+<img width="434" height="400" alt="image" src="https://github.com/user-attachments/assets/d7ffe146-3286-4e48-874c-6465528303da" />
+
+**Ventas:** Artículos vendidos con puntuaciones recibidas.
+
+<img width="434" height="439" alt="image" src="https://github.com/user-attachments/assets/a8d675ca-2f0f-4bc8-afe6-fe510a26338f" />
+
+### Opción 8: Borrar mi perfil de usuario
+Elimina de forma irreversible la cuenta y toda su información asociada.
+
+### Opción 9: Cerrar sesión
+Finaliza la sesión de forma segura y vuelve al Menú Principal.
+
+### Opción 10: Salir
+Cierra completamente la aplicación.
+
+---
+
+# 5. Creadores
+Este software ha sido diseñado y desarrollado íntegramente por:
+
+**Jose Ignacio Escuchas**
