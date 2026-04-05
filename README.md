@@ -1,4 +1,4 @@
-FernanPop v2 – Manual de Usuario
+FernanPop v3 – Manual de Usuario
 <img width="1024" height="1536" alt="Fernanpop" src="https://github.com/user-attachments/assets/c7cdd749-63de-4d48-845f-eed7fc1439d7" />
 
 
